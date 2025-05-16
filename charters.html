@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars</title>
+
+</head>
+<body>
+  <header>
+    <img src="img/icon.png"alt="Star Wars Logo">
+  </header>
+  <nav>
+    <a href="#index.html">Home</a>
+    <a href="#charters.html">Personajes</a>
+    <a href="#videos.html">Videos</a>
+    <a href="#series.html">Series</a>
+  </nav>
+  <main>
+   
+  </main>
+  <footer>
+    <p>Síguenos en:</p>
+    <a href="https://www.facebook.com/StarWars/" target="_blank">Facebook</a>
+    <a href="https://twitter.com/starwars" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/starwars/" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/user/starwars" target="_blank">YouTube</a>
+  </footer>
+  <script>
+    let index = 0;
+    function moveSlide(step) {
+      const carousel = document.getElementById('carousel');
+      const totalSlides = carousel.children.length;
+      index = (index + step + totalSlides) % totalSlides;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+  </script>
+</body>
+</html>
