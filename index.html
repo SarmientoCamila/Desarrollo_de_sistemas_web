@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Star Wars</title>
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
@@ -11,22 +12,27 @@
     <img src="img/icon.png"alt="Star Wars Logo">
   </header>
   <nav>
-    <a href="#index.html">Home</a>
-    <a href="#charters.html">Personajes</a>
-    <a href="#videos.html">Videos</a>
-    <a href="#series.html">Series</a>
+    <a href="index.html">Home</a>
+    <a href="charters.html">Personajes</a>
+    <a href="video.html">Videos</a>
+    <a href="series.html">Series</a>
   </nav>
   <main>
     <div class="carousel">
-      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-      <div class="carousel-images" id="carousel">
-        <img src="img/image.png" alt="Imagen 1">
-        <img src="img/image_c671e2ee.jpeg" alt="Imagen 2">
-        <img src="img/Star-Wars.jpg" alt="Imagen 3">
+      <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+  
+      <div class="carousel-window">
+        <div class="carousel-images" id="carousel">
+          <img src="img/image.png" alt="Imagen 1">
+          <img src="img/2Star-Wars.jpg" alt="Imagen 2">
+          <img src="img/Star-Wars.jpg" alt="Imagen 3">
+        </div>
       </div>
-      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  
+      <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
     </div>
   </main>
+  
   <footer>
     <p>Síguenos en:</p>
     <a href="https://www.facebook.com/StarWars/" target="_blank">Facebook</a>

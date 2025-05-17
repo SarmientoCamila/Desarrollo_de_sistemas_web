@@ -4,28 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Star Wars</title>
-
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
     <img src="img/icon.png"alt="Star Wars Logo">
   </header>
   <nav>
-    <a href="#index.html">Home</a>
-    <a href="#charters.html">Personajes</a>
-    <a href="#videos.html">Videos</a>
-    <a href="#series.html">Series</a>
+    <a href="index.html">Home</a>
+    <a href="charters.html">Personajes</a>
+    <a href="video.html">Videos</a>
+    <a href="series.html">Series</a>
   </nav>
-  <main>
-    <section id="carousel">
-      <div class="slide">
-        <img src="img/series/mandalorian.jpg" alt="The Mandalorian">
-        <h2>The Mandalorian</h2>
-        <p>La serie sigue a un pistolero solitario y su hijo en el mundo de losOuter Rim, donde se enfrentan a una amenaza de caza de recompensas.</p>
+  <main class="tabs">
+
+    <div class="tab">
+      <input type="checkbox" id="peliculas">
+      <label for="peliculas">🎬 Películas</label>
+      <div class="tab-content">
+        <h3>Trilogía de Precuelas</h3>
+        <ul>
+          <li>Episodio I: La amenaza fantasma (1999)</li>
+          <li>Episodio II: El ataque de los clones (2002)</li>
+          <li>Episodio III: La venganza de los Sith (2005)</li>
+        </ul>
+
+        <h3>Películas Antológicas</h3>
+        <ul>
+          <li>Solo: A Star Wars Story (2018)</li>
+          <li>Rogue One: A Star Wars Story (2016)</li>
+        </ul>
+
+        <h3>Trilogía Original</h3>
+        <ul>
+          <li>Episodio IV: Una nueva esperanza (1977)</li>
+          <li>Episodio V: El Imperio contraataca (1980)</li>
+          <li>Episodio VI: El retorno del Jedi (1983)</li>
+        </ul>
+
+        <h3>Trilogía de Secuelas</h3>
+        <ul>
+          <li>Episodio VII: El despertar de la Fuerza (2015)</li>
+          <li>Episodio VIII: Los últimos Jedi (2017)</li>
+          <li>Episodio IX: El ascenso de Skywalker (2019)</li>
+        </ul>
+
+        <h3>Próximos Estrenos</h3>
+        <ul>
+          <li>The Mandalorian & Grogu (2026)</li>
+          <li>Star Wars: Starfighter (2027)</li>
+        </ul>
       </div>
-    </section> 
-  
+    </div>
+
+    <div class="tab">
+      <input type="checkbox" id="series">
+      <label for="series">📺 Series de Televisión</label>
+      <div class="tab-content">
+        <h3>Series Animadas</h3>
+        <ul>
+          <li>Star Wars: Droids (1985–1986)</li>
+          <li>Ewoks (1985–1986)</li>
+          <li>Star Wars: The Clone Wars (2008–2020)</li>
+          <li>Star Wars Rebels (2014–2018)</li>
+          <li>Star Wars Resistance (2018–2020)</li>
+          <li>Star Wars: The Bad Batch (2021–2024)</li>
+          <li>Star Wars: Visions (2021–presente)</li>
+          <li>Tales of the Jedi (2022–presente)</li>
+          <li>Young Jedi Adventures (2023–presente)</li>
+        </ul>
+
+        <h3>Series de Acción Real</h3>
+        <ul>
+          <li>The Mandalorian (2019–2023)</li>
+          <li>The Book of Boba Fett (2021–2022)</li>
+          <li>Obi-Wan Kenobi (2022)</li>
+          <li>Andor (2022–2025)</li>
+          <li>Ahsoka (2023–presente)</li>
+          <li>The Acolyte (2024)</li>
+          <li>Skeleton Crew (2024–presente)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab">
+      <input type="checkbox" id="cronologia">
+      <label for="cronologia">📅 Orden Cronológico del Canon</label>
+      <div class="tab-content">
+        <ol>
+          <li>The Acolyte</li>
+          <li>Tales of the Jedi</li>
+          <li>Episodio I: La amenaza fantasma</li>
+          <li>Episodio II: El ataque de los clones</li>
+          <li>Star Wars: The Clone Wars</li>
+          <li>Star Wars: The Bad Batch</li>
+          <li>Episodio III: La venganza de los Sith</li>
+          <li>Solo: A Star Wars Story</li>
+          <li>Obi-Wan Kenobi</li>
+          <li>Star Wars Rebels</li>
+          <li>Andor</li>
+          <li>Rogue One: A Star Wars Story</li>
+          <li>Episodio IV: Una nueva esperanza</li>
+          <li>Episodio V: El Imperio contraataca</li>
+          <li>Episodio VI: El retorno del Jedi</li>
+          <li>The Mandalorian</li>
+          <li>The Book of Boba Fett</li>
+          <li>Ahsoka</li>
+          <li>Star Wars Resistance</li>
+          <li>Episodio VII: El despertar de la Fuerza</li>
+          <li>Episodio VIII: Los últimos Jedi</li>
+          <li>Episodio IX: El ascenso de Skywalker</li>
+        </ol>
+      </div>
+    </div>
+
   </main>
+  
   <footer>
     <p>Síguenos en:</p>
     <a href="https://www.facebook.com/StarWars/" target="_blank">Facebook</a>
