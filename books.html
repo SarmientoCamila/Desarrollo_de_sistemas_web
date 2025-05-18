@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <header>
+    <img src="img/icon.png"alt="Star Wars Logo">
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="charters.html">Personajes</a>
+    <a href="video.html">Videos</a>
+    <a href="series.html">Series</a>
+    <a href="books.html">Libros y comics</a>
+  </nav>
+  <main>
+    <section class="libros">
+        <h2>Categoria de libros y comics</h2>
+        <div class="card-book-grid">
+            <div class="card-book">
+                <a href="archivos/Star Wars Vol. 3 25.pdf" download>
+                <img src="img/Star-Wars-1-2020.webp" alt=""></a>
+                <h5>Star Wars Volumen 3 </h5>
+                <span></span>
+               </div>
+               <div class="card-book">
+                <img src="img/the-bad-batch-sanctuary-novel.jpeg" alt="">
+                <h5>Star Wars: Sanctuary </h5>
+                <span></span>
+               </div>
+               <div class="card-book">
+                <img src="img/bad-batch-issues.jpeg" alt="">
+                <h5>The Bad Batch — Ghost Agents</h5>
+                <span></span>
+               </div>
+               <div class="card-book">
+                <img src="img/star-wars-1-cover_dd42184b.jpeg" alt="">
+                <h5>Star Wars: Return of the Jedi - Exclusive Reveal</h5>
+                <span></span>
+               </div>
+               <div class="card-book">
+                <img src="img/best-of-2024-featured_9c980dcd.jpeg" alt="">
+                <h5>Star Wars Year in Review 2024</h5>
+                <span></span>
+               </div>
+               <div class="card-book">
+                <img src="img/marvel-legacy-of-vader-stwtlov2025001-cover_01685634.jpeg" alt="">
+                <h5>Star Wars: Legacy of Vader</h5>
+                <span></span>
+               </div>
+               <div class="card-book">
+                <img src="img/star-wars-bestiary-art-reveal_article-feature_42b9f7d2.jpeg" alt="">
+                <h5>The Star Wars Bestiary, Volume 1: Creatures of the Galaxy</h5>
+                <span></span>
+               </div>
+               <div class="card-book">
+                <img src="img/nycc-2024-lucasfilm-publishing-reveals-mace-gg_b4e7425a.jpeg" alt="">
+                <h5>NYCC 2024: All the Star Wars News and Reveals from New York Comic-Con</h5>
+                <span></span>
+               </div>
+               <div class="card-book">
+                <img src="img/star-wars-reads-recommendations-padawan-s-pride-cover_489dd9e5.jpeg" alt="">
+                <h5>Our Star Wars Reads Picks For Every Type of Reader in Your Life</h5>
+                <span></span>
+               </div>
+               <div class="card-book">
+                <img src="img/star-wars-glass-abyss-excerpt-back_6a89dc46.jpeg" alt="">
+                <h5>Mace Windu: The Glass Abyss, the Jedi Master has a Crisis of Conscience</h5>
+                <span></span>
+               </div>
+        </div>
+
+    </section>
+  
+  </main>
+  <footer>
+    <p>Síguenos en:</p>
+    <a href="https://www.facebook.com/StarWars/" target="_blank">Facebook</a>
+    <a href="https://twitter.com/starwars" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/starwars/" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/user/starwars" target="_blank">YouTube</a>
+    <p>
+        Desarrollado por: Rocio Lujan | Sarmiento Camila | Desarrollo de Software 2025
+      </p>
+  
+  
+  
+  
+    </footer>
+    <script>
+      let index = 0;
+      function moveSlide(step) {
+        const carousel = document.getElementById('carousel');
+        const totalSlides = carousel.children.length;
+        index = (index + step + totalSlides) % totalSlides;
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+      }
+    </script>
+</body>
+</html>
