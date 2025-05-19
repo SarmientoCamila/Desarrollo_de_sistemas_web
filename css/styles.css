@@ -399,3 +399,15 @@ nav a:hover {
     height: auto;
   }
 }
+
+.tabla-personajes {
+  margin: 2rem auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+.tabla-personajes th,
+.tabla-personajes td {
+  padding: 0.7rem;
+}
